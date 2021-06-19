@@ -1,4 +1,4 @@
-# Udacity Cloud Native Foundations Course Notes
+# Detailed Course Notes
 
 ## Lesson 1 - Introduction to Cloud Native Fundamentals
 
