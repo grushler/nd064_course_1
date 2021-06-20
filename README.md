@@ -1,12 +1,12 @@
 # Udacity Cloud Native Foundations Course
 
 ## Setup Instructions for MacOS
-#### Setup instructions for the entire course on MacOS have been added in [Setup Instructions File](../main/setup_instructions.md)
+#### Setup instructions for the entire course on MacOS have been added in [Setup Instructions](../main/setup_instructions.md)
 
 ---
 
-## Detailed Course Notes
-#### Detailed course notes have been added in [Detailed Notes File](../main/detailed_notes.md)
+## Troubleshooting Guide
+#### Troubleshooting guide has the details of issues that I faced during the course and how I resolved them [Troubleshooting Guide](../main/troubleshooting_guide.md)
 
 ---
 
@@ -34,7 +34,51 @@
     * Business perspective includes application flexibility for transformation, faster development cycles and reduced application downtimes.
     * Technical perspective includes automated integration and deployment of services, management of services with less effort and individual application maintenance and debugging.
 * As part of the course, few things need to be setup in the machines and the instructions for those are provided in the 
-[Setup Instructions File](../main/setup_instructions.md)
+[Setup Instructions](../main/setup_instructions.md)
+
+##### Detailed Notes:
+
+* Cloud native - refers to practices using which the applications run in cloud environment.
+* Benefits of cloud native -
+    * Faster and easier application scaling.
+    * Higher feature velocity.
+    * Innovating with technology ecosystem.
+* Types of cloud environments -
+    * Private cloud
+    * Public cloud
+    * Hybrid cloud
+* Containers - are small units of application.
+* Benefits of containers -
+    * Follows single application principle.
+    * Easy to manage.
+    * Easy to deploy.
+    * Faster recovery from downtime.
+* Microservices - are collection of small and independent services or applications.
+* Types of container managers or orchestrators -
+    * Kubernetes
+    * Docker swarm
+    * Apache mesos
+* Kubernetes - is a container orchestrator that automates:
+    * Configuration
+    * Management
+    * Scalability
+* Kubernetes also integrates with -
+    * Runtime
+    * Networking
+    * Storage
+    * Service mesh
+    * Logs and metrics
+    * Tracing
+* CNCF - Cloud native computing foundation is a home to open source projects that provide tools for running an application cloud environment.
+* Cloud native adoption requires two things -
+    * Business perspective -
+        * Agility
+        * Growth
+        * Service availability
+    * Technical perspective -
+        * Automation
+        * Orchestration
+        * Observability
 
 ---
 
