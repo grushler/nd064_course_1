@@ -133,6 +133,56 @@
     * Docker file - set of instructions to create a docker image
     * Docker image - read only template that is used to run the application in a container
     * Docker registry - central place where all the images are stored and distributed
+* Useful docker commands used to perform various operations -
+    * docker build - builds an image
+    * docker tag - tags an image with a version
+    * docker push - pushes the image to the docker registry, in our case dockerhub
+    * docker run - run the docker image locally and create a container
+    * docker exec - login to running docker container
+    * docker logs - print the logs of the running docker container
+* Docker or containerization process: Create docker file -> Build docker file to create docker image -> 
+Run the docker image to verify everything's working as expected -> Tag the docker image -> Push the docker image to registry
+* Container orchestrators are very much needed as the number of containers that need management go out of control when the application needs scaling up.
+* Kubernetes has laid the path for the container orchestration. It is widely used because of -
+    * Portability
+        * Open source technology under CNCF
+        * Platform agnostic and has the support of almost all the cloud providers
+    * Resiliency
+        * Makes sure the required number of services are maintained 
+        * Self healing ability using replicasets and various probes
+    * Scalability
+        * Uses HPA (horizontal pod autoscaler) to assign the resources for each container and manage the containers
+        * Elasticity is the core feature which supports scaling up and down of the containers on demand
+    * Service discovery
+        * Provides cluster level DNS system
+        * Distributes the traffic as necessary
+    * Extensibility
+        * Uses building blocks principle to build on top of base block
+        * Uses CRD (custom resource definition) to add new resource to the cluster
+    * Operational cost
+        * Powerful scheduler to allocate the resources to the clusters
+        * Cluster autoscaler - Automates the size of the cluster based on traffic to the application which can be specified in the configuration
+* Kubernetes -
+    * Has Clusters - pool of nodes
+    * Has Nodes - 
+        * Control plane - collection of master nodes
+            * Takes global decisions about the cluster like api server, scheduler, control manager, etcd.
+        * Data plane - collection of worked nodes
+            * Used to host application nodes and components like kubelet and kube-proxy
+    * Kubelet and kube-proxy runs on all nodes including master and worked nodes
+    * Bootstrapping of a cluster (makes sure control and data planes are up and running) can be done with tools like Kubeadm, k3s, kops, kubespray in production. For development purpose kind and minikube tools can be used.
+    * k3s is lightweight with single binary installation and can operate with just one node
+    * kubectl is the command line utility tool for kubernetes
+    * kubeconfig is the configuration file added in a cluster to manage the cluster configuration
+        * It has the information about clusters, context and users
+    * Various kubectl commands can be used to get all the necessary information about clusters or nodes and even modify the configuration of the clusters and nodes
+    * Kubernetes resources consists of pods, namespaces, configuration maps and secrets, deployment and replicasets, services and ingress, CRD etc...
+    * Pods -
+        * Pod is a smallest deployable unit where the docker container application runs
+        * A node can have multiple pods and a cluster can have multiple nodes
+        * ReplicaSets are used to maintain the number of pods that should be up and running
+        * Headless pods can be created using `kubectl run` command
+    
 
 
 
