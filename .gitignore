@@ -1,0 +1,5 @@
+**/app.log
+**/app.pyc
+**/.vagrant
+**.DS_Store
+**/*.pyc
